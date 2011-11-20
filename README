@@ -1,0 +1,24 @@
+KeyTrap.js
+
+This script lets you intercept document-level keys, without
+completely breaking everything, allwhere, everywhen: it sets
+up intercepts for specific keys for specific elements, and
+only intercepts these keys when focus is on the indicated
+element. If focus is moved off of that element, key interceptions
+bound to that element are completely ignored.
+
+This is very useful for things like browser games, or custom
+interaction elements, where something like "backspace" should,
+under no circumstances make the browser jump to the previous
+page. Similarly you can trap cursor keys, or the tab key, or
+what have you. And because the trapping is per element, your
+page won't break user interaction when the user is not focussed
+on your browser-behaviour-modifying element.
+
+(c) Mike "Pomax" Kamermans, 2011
+
+You are permitted to use this package however you see
+fit, except when that use interferes with the user's
+expectations of browser interaction. So basically
+"free to use, but if you're abusing this, you violated
+the license agreement". Nice and simple.
